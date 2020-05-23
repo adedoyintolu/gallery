@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="photo/favicon.png">
+    
+</head>
+<body>
+    <div class="header">
+        <img src="photo/logo.png" alt="Logo" class="logo">
+        <div class="welcome">
+            <h5 class="desc">
+                Welcome to my gallery! Brace your mind to see Memorable pictures from exceptional events.</h5>
+                <hr class="hr">
+        </div>
+    </div>
+<div class="main">
+<div>
+    <div class="college_pics">
+        <h2 id="life">Life in College</h2>
+        <img src="photo/Tolulope.png" alt="Myself" class="college">
+        <img src="photo/Tolulope.png" alt="Myself" class="college">
+        <img src="photo/Tolulope.png" alt="Myself" class="college">
+        <img src="photo/Tolulope.png" alt="Myself" class="college">
+    </div>
+    <div class="college_pics2">
+        <img src="photo/Tolulope.png" alt="Myself" class="college">
+        <img src="photo/Tolulope.png" alt="Myself" class="college">
+        <img src="photo/Tolulope.png" alt="Myself" class="college">
+        <img src="photo/Tolulope.png" alt="Myself" class="college">
+    </div>
+    <br>
+    <button class="view" id="college_button">View More</button>
+</div>
+<div>
+    <div class="graduation_pics">
+        <h2 id="grad">Graduation From College</h2>
+        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
+        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
+        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
+        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
+    </div>
+    <div class="graduation_pics2">
+        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
+        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
+        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
+        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
+    </div>
+    <br>
+    <button class="view" id="grad_button">View More</button>
+    <div>
+        <div class="nysc_pics">
+            <h2 id="nysc">NYSC Days</h2>
+            <img src="photo/Tolulope.png" alt="Myself" class="nysc">
+            <img src="photo/Tolulope.png" alt="Myself" class="nysc">
+            <img src="photo/Tolulope.png" alt="Myself" class="nysc">
+            <img src="photo/Tolulope.png" alt="Myself" class="nysc">
+        </div>
+        <div class="nysc_pics2">
+            <img src="photo/Tolulope.png" alt="Myself" class="nysc">
+            <img src="photo/Tolulope.png" alt="Myself" class="nysc">
+            <img src="photo/Tolulope.png" alt="Myself" class="nysc">
+            <img src="photo/Tolulope.png" alt="Myself" class="nysc">
+        </div>
+        <br>
+        <button class="view" id="nysc_button" >View More</button>
+    </div>
+    <div>
+        <div class="work_pics">
+            <h2 id="work">My working class life</h2>
+            <img src="photo/Tolulope.png" alt="Myself" class="work">
+            <img src="photo/Tolulope.png" alt="Myself" class="work">
+            <img src="photo/Tolulope.png" alt="Myself" class="work">
+            <img src="photo/Tolulope.png" alt="Myself" class="work">
+        </div>
+        <div class="work_pics2">
+            <img src="photo/Tolulope.png" alt="Myself" class="work">
+            <img src="photo/Tolulope.png" alt="Myself" class="work">
+            <img src="photo/Tolulope.png" alt="Myself" class="work">
+            <img src="photo/Tolulope.png" alt="Myself" class="work">
+        </div>
+        <br>
+        <button class="view" id="work_button">View More</button>
+    </div>
+</div>
+</div>
+<div class="footer">
+       <p id="foot">&copy Tolulope Adedoyin 2020</p>
+</div>
+<script type="text/javascript" src="jquery.js"> </script>
+<script>
+    $(document).ready(function(){
+       $("#work_button").click(function(){
+           $(".work_pics2").toggleClass("college2_style")
+           $("#work_button").text("Close")
+        $("#work_button").click(function(){
+           $("#work_button").text("View More")
+        });
+       });
+       $("#nysc_button").click(function(){
+           $(".nysc_pics2").toggleClass("college2_style")
+           $("#nysc_button").html( "Close")
+           $("#nysc_button").click(function(){
+           $("#nysc_button").text("View More")
+        });
+       });
+       $("#grad_button").click(function(){
+        $(".graduation_pics2").toggleClass("college2_style")
+        $("#grad_button").html( "Close")
+        $("#grad_button").click(function(){
+           $("#grad_button").text("View More")
+        });
+       });
+       $("#college_button").click(function(){
+          $(".college_pics2").toggleClass("college2_style")
+          $("#college_button").html( "Close")
+          $("#college_button").click(function(){
+           $("#college_button").text("View More")
+        });
+       });
+    });
+    
+</script>
+<style>
+    .college2_style{
+        visibility: visible;
+        margin-top: 12%;
+    }
+    @media screen and (max-width: 480px){
+    .college2_style{
+        visibility: visible;
+        margin-top: 52%;
+    }
+    } 
+</style>
+<style>
+       
+</style>
+<style>
+    .bigger{
+        width: 50%;
+        height: 50%;
+    }
+</style>
+</body>
+</html>
