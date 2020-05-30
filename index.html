@@ -12,8 +12,7 @@
     <div class="header">
         <img src="photo/logo.png" alt="Logo" class="logo">
         <div class="welcome">
-            <h5 class="desc">
-                Welcome to my gallery! Brace your mind to see Memorable pictures from exceptional events.</h5>
+            <h5 class="desc">Welcome to my gallery! Brace your mind to see Memorable pictures from exceptional events.</h5>
                 <hr class="hr">
         </div>
     </div>
@@ -21,96 +20,32 @@
 <div>
     <div class="college_pics">
         <h2 id="life">The whole summary of life in pictures</h2>
-        <img src="photo/9.jpg" alt="Myself" class="college">
-        <img src="photo/10.jpg" alt="Myself" class="college">
-        <img src="photo/16.jpg" alt="Myself" class="college">
-        <img src="photo/12.jpg" alt="Myself" class="college">
+        <img src="photo/9.jpg" alt="Myself" class="college" id="college1"> 
+        <img src="photo/10.jpg" alt="Myself" class="college" id="college2">
+        <img src="photo/16.jpg" alt="Myself" class="college" id="college3">
+        <img src="photo/12.jpg" alt="Myself" class="college" id="college4">
     </div>
     <div class="college_pics2">
-        <img src="photo/17.jpg" alt="Myself" class="college">
-        <img src="photo/22.jpg" alt="Myself" class="college">
-        <img src="photo/Tolulope.png" alt="Myself" class="college">
-        <img src="photo/8.jpg" alt="Myself" class="college">
+        <img src="photo/17.jpg" alt="Myself" class="college" id="college5">
+        <img src="photo/22.jpg" alt="Myself" class="college" id="college6">
+        <img src="photo/Tolulope.png" alt="Myself" class="college" id="college7">
+        <img src="photo/8.jpg" alt="Myself" class="college" id="college8">
     </div>
     <br>
     <button class="view" id="college_button">View More</button>
 </div>
-<!-- <div>
-    <div class="graduation_pics">
-        <img src="photo/17.jpg" alt="Myself" class="graduation">
-        <img src="photo/18.jpg" alt="Myself" class="graduation">
-        <img src="photo/19.jpg" alt="Myself" class="graduation">
-        <img src="photo/20.jpg" alt="Myself" class="graduation">
-    </div>
-    <div class="graduation_pics2">
-        <img src="photo/21.jpg" alt="Myself" class="graduation">
-        <img src="photo/22.jpg" alt="Myself" class="graduation">
-        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
-        <img src="photo/Tolulope.png" alt="Myself" class="graduation">
-    </div>
-    <br>
-    <button class="view" id="grad_button">View More</button>
-    <div>
-        <div class="nysc_pics">
-            <img src="photo/1.jpg" alt="Myself" class="nysc">
-            <img src="photo/2.jpg" alt="Myself" class="nysc">
-            <img src="photo/3.jpg" alt="Myself" class="nysc">
-            <img src="photo/4.jpg" alt="Myself" class="nysc">
-        </div>
-        <div class="nysc_pics2">
-            <img src="photo/5.jpg" alt="Myself" class="nysc">
-            <img src="photo/6.jpg" alt="Myself" class="nysc">
-            <img src="photo/7.jpg" alt="Myself" class="nysc">
-            <img src="photo/8.jpg" alt="Myself" class="nysc">
-        </div>
-        <br>
-        <button class="view" id="nysc_button" >View More</button> -->
-    </div>
-    <!-- <div>
-        <div class="work_pics">
-            <img src="photo/Tolulope.png" alt="Myself" class="work">
-            <img src="photo/Tolulope.png" alt="Myself" class="work">
-            <img src="photo/Tolulope.png" alt="Myself" class="work">
-            <img src="photo/Tolulope.png" alt="Myself" class="work">
-        </div>
-        <div class="work_pics2">
-            <img src="photo/Tolulope.png" alt="Myself" class="work">
-            <img src="photo/Tolulope.png" alt="Myself" class="work">
-            <img src="photo/Tolulope.png" alt="Myself" class="work">
-            <img src="photo/Tolulope.png" alt="Myself" class="work">
-        </div>
-        <br>
-        <button class="view" id="work_button">View More</button>
-    </div> -->
+
 </div>
 </div>
 <div class="footer">
        <p id="foot">&copy Tolulope Adedoyin 2020</p>
 </div>
 <script type="text/javascript" src="jquery.js"> </script>
+<script type="text/javascript" src="main.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script>
     $(document).ready(function(){
-    //    $("#work_button").click(function(){
-    //        $(".work_pics2").toggleClass("college2_style")
-    //        $("#work_button").text("Close")
-    //     $("#work_button").click(function(){
-    //        $("#work_button").text("View More")
-    //     });
-    //    });
-    //    $("#nysc_button").click(function(){
-    //        $(".nysc_pics2").toggleClass("college2_style")
-    //        $("#nysc_button").html( "Close")
-    //        $("#nysc_button").click(function(){
-    //        $("#nysc_button").text("View More")
-    //     });
-    //    });
-    //    $("#grad_button").click(function(){
-    //     $(".graduation_pics2").toggleClass("college2_style")
-    //     $("#grad_button").html( "Close")
-    //     $("#grad_button").click(function(){
-    //        $("#grad_button").text("View More")
-    //     });
-    //    });
+    
        $("#college_button").click(function(){
           $(".college_pics2").toggleClass("college2_style")
           $("#college_button").html( "Close")
@@ -118,6 +53,30 @@
            $("#college_button").text("View More")
         });
        });
+       $('#college1').click(function(){
+           $("#college1").toggleClass("imageStyle")
+       })
+       $('#college2').click(function(){
+           $("#college2").toggleClass("imageStyle")
+       })
+       $('#college3').click(function(){
+           $("#college3").toggleClass("imageStyle")
+       })
+       $('#college4').click(function(){
+           $("#college4").toggleClass("imageStyle")
+       })
+       $('#college5').click(function(){
+           $("#college5").toggleClass("imageStyle")
+       })
+       $('#college6').click(function(){
+           $("#college6").toggleClass("imageStyle")
+       })
+       $('#college7').click(function(){
+           $("#college7").toggleClass("imageStyle")
+       })
+       $('#college8').click(function(){
+           $("#college8").toggleClass("imageStyle")
+       })
     });
     
 </script>
@@ -132,14 +91,8 @@
         margin-top: 52%;
     }
     } 
-</style>
-<style>
-       
-</style>
-<style>
-    .bigger{
-        width: 50%;
-        height: 50%;
+    .imageStyle{
+        width: auto;
     }
 </style>
 </body>
